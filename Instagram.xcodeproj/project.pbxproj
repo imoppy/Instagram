@@ -13,6 +13,13 @@
 		E2956E0527F54C290089ACAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2956E0327F54C280089ACAC /* Main.storyboard */; };
 		E2956E0727F54C2B0089ACAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2956E0627F54C2B0089ACAC /* Assets.xcassets */; };
 		E2956E0A27F54C2B0089ACAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2956E0827F54C2B0089ACAC /* LaunchScreen.storyboard */; };
+		E2956E1427F54DF70089ACAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E1327F54DF70089ACAC /* LoginViewController.swift */; };
+		E2956E1627F54E070089ACAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E1527F54E070089ACAC /* HomeViewController.swift */; };
+		E2956E1827F54E140089ACAC /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E1727F54E140089ACAC /* ImageSelectViewController.swift */; };
+		E2956E1A27F54E1E0089ACAC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E1927F54E1E0089ACAC /* PostViewController.swift */; };
+		E2956E1C27F54E270089ACAC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E1B27F54E270089ACAC /* SettingViewController.swift */; };
+		E2956E1E27F55A1E0089ACAC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E1D27F55A1E0089ACAC /* TabBarController.swift */; };
+		E2956E2027F55DEF0089ACAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2956E1F27F55DEF0089ACAC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		E2956E0627F54C2B0089ACAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2956E0927F54C2B0089ACAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2956E0B27F54C2B0089ACAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2956E1327F54DF70089ACAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E2956E1527F54E070089ACAC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E2956E1727F54E140089ACAC /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		E2956E1927F54E1E0089ACAC /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		E2956E1B27F54E270089ACAC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E2956E1D27F55A1E0089ACAC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E2956E1F27F55DEF0089ACAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,13 @@
 				E2956E0627F54C2B0089ACAC /* Assets.xcassets */,
 				E2956E0827F54C2B0089ACAC /* LaunchScreen.storyboard */,
 				E2956E0B27F54C2B0089ACAC /* Info.plist */,
+				E2956E1327F54DF70089ACAC /* LoginViewController.swift */,
+				E2956E1527F54E070089ACAC /* HomeViewController.swift */,
+				E2956E1727F54E140089ACAC /* ImageSelectViewController.swift */,
+				E2956E1927F54E1E0089ACAC /* PostViewController.swift */,
+				E2956E1B27F54E270089ACAC /* SettingViewController.swift */,
+				E2956E1D27F55A1E0089ACAC /* TabBarController.swift */,
+				E2956E1F27F55DEF0089ACAC /* GoogleService-Info.plist */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -126,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2956E0A27F54C2B0089ACAC /* LaunchScreen.storyboard in Resources */,
+				E2956E2027F55DEF0089ACAC /* GoogleService-Info.plist in Resources */,
 				E2956E0727F54C2B0089ACAC /* Assets.xcassets in Resources */,
 				E2956E0527F54C290089ACAC /* Main.storyboard in Resources */,
 			);
@@ -138,6 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2956E1827F54E140089ACAC /* ImageSelectViewController.swift in Sources */,
+				E2956E1627F54E070089ACAC /* HomeViewController.swift in Sources */,
+				E2956E1A27F54E1E0089ACAC /* PostViewController.swift in Sources */,
+				E2956E1E27F55A1E0089ACAC /* TabBarController.swift in Sources */,
+				E2956E1C27F54E270089ACAC /* SettingViewController.swift in Sources */,
+				E2956E1427F54DF70089ACAC /* LoginViewController.swift in Sources */,
 				E2956E0227F54C280089ACAC /* ViewController.swift in Sources */,
 				E2956DFE27F54C280089ACAC /* AppDelegate.swift in Sources */,
 				E2956E0027F54C280089ACAC /* SceneDelegate.swift in Sources */,
@@ -296,7 +324,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +334,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,7 +352,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
