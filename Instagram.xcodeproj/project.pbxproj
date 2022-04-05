@@ -21,6 +21,10 @@
 		E2956E1C27F54E270089ACAC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E1B27F54E270089ACAC /* SettingViewController.swift */; };
 		E2956E1E27F55A1E0089ACAC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E1D27F55A1E0089ACAC /* TabBarController.swift */; };
 		E2956E2027F55DEF0089ACAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2956E1F27F55DEF0089ACAC /* GoogleService-Info.plist */; };
+		E2956E2227FBC2480089ACAC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E2127FBC2480089ACAC /* Const.swift */; };
+		E2956E2427FBC5420089ACAC /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E2327FBC5420089ACAC /* PostData.swift */; };
+		E2956E2927FBC5E60089ACAC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E2727FBC5E60089ACAC /* PostTableViewCell.swift */; };
+		E2956E2A27FBC5E60089ACAC /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2956E2827FBC5E60089ACAC /* PostTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		E2956E1B27F54E270089ACAC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E2956E1D27F55A1E0089ACAC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E2956E1F27F55DEF0089ACAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2956E2127FBC2480089ACAC /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		E2956E2327FBC5420089ACAC /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		E2956E2727FBC5E60089ACAC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E2956E2827FBC5E60089ACAC /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +70,6 @@
 				BAB396AE8090EA75EC44AE5E /* Pods-Instagram.debug.xcconfig */,
 				09E02A07347A6617E02CFADF /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -109,6 +116,10 @@
 				E2956E1B27F54E270089ACAC /* SettingViewController.swift */,
 				E2956E1D27F55A1E0089ACAC /* TabBarController.swift */,
 				E2956E1F27F55DEF0089ACAC /* GoogleService-Info.plist */,
+				E2956E2127FBC2480089ACAC /* Const.swift */,
+				E2956E2327FBC5420089ACAC /* PostData.swift */,
+				E2956E2727FBC5E60089ACAC /* PostTableViewCell.swift */,
+				E2956E2827FBC5E60089ACAC /* PostTableViewCell.xib */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -174,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2956E0A27F54C2B0089ACAC /* LaunchScreen.storyboard in Resources */,
+				E2956E2A27FBC5E60089ACAC /* PostTableViewCell.xib in Resources */,
 				E2956E2027F55DEF0089ACAC /* GoogleService-Info.plist in Resources */,
 				E2956E0727F54C2B0089ACAC /* Assets.xcassets in Resources */,
 				E2956E0527F54C290089ACAC /* Main.storyboard in Resources */,
@@ -238,6 +250,9 @@
 				E2956E0227F54C280089ACAC /* ViewController.swift in Sources */,
 				E2956DFE27F54C280089ACAC /* AppDelegate.swift in Sources */,
 				E2956E0027F54C280089ACAC /* SceneDelegate.swift in Sources */,
+				E2956E2427FBC5420089ACAC /* PostData.swift in Sources */,
+				E2956E2227FBC2480089ACAC /* Const.swift in Sources */,
+				E2956E2927FBC5E60089ACAC /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +405,7 @@
 				DEVELOPMENT_TEAM = 7J355W4TYN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "本アプリは、画像の投稿及び編集のため、カメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -419,6 +435,7 @@
 				DEVELOPMENT_TEAM = 7J355W4TYN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "本アプリは、画像の投稿及び編集のため、カメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

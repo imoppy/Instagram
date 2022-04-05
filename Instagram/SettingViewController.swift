@@ -64,6 +64,7 @@ class SettingViewController: UIViewController {
     @IBAction func handleLogoutButton(_ sender: Any) {
         // ログアウトする
         try! Auth.auth().signOut()
+        print("DEBUG_PRINT: ログアウトしました。")
 
         // ログイン画面を表示する
         let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
