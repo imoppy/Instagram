@@ -25,6 +25,7 @@
 		E2956E2427FBC5420089ACAC /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E2327FBC5420089ACAC /* PostData.swift */; };
 		E2956E2927FBC5E60089ACAC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E2727FBC5E60089ACAC /* PostTableViewCell.swift */; };
 		E2956E2A27FBC5E60089ACAC /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2956E2827FBC5E60089ACAC /* PostTableViewCell.xib */; };
+		E2956E2C27FD7F9C0089ACAC /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2956E2B27FD7F9C0089ACAC /* CommentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E2956E2327FBC5420089ACAC /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		E2956E2727FBC5E60089ACAC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		E2956E2827FBC5E60089ACAC /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		E2956E2B27FD7F9C0089ACAC /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				E2956E2327FBC5420089ACAC /* PostData.swift */,
 				E2956E2727FBC5E60089ACAC /* PostTableViewCell.swift */,
 				E2956E2827FBC5E60089ACAC /* PostTableViewCell.xib */,
+				E2956E2B27FD7F9C0089ACAC /* CommentViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2956E2C27FD7F9C0089ACAC /* CommentViewController.swift in Sources */,
 				E2956E1827F54E140089ACAC /* ImageSelectViewController.swift in Sources */,
 				E2956E1627F54E070089ACAC /* HomeViewController.swift in Sources */,
 				E2956E1A27F54E1E0089ACAC /* PostViewController.swift in Sources */,

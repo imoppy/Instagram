@@ -52,6 +52,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-1f-mgo">
+                        <rect key="frame" x="130" y="440" width="100" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="HZy-R9-Rfs"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="コメント"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="kH9-Fg-NV1" firstAttribute="centerY" secondItem="IUA-3R-4VD" secondAttribute="centerY" id="AXh-06-xN7"/>
@@ -61,6 +69,9 @@
                     <constraint firstAttribute="bottomMargin" secondItem="WC4-ia-QGv" secondAttribute="bottom" constant="10" id="LdP-6l-LU4"/>
                     <constraint firstItem="WC4-ia-QGv" firstAttribute="top" secondItem="IUA-3R-4VD" secondAttribute="bottom" constant="10" id="PSt-YP-r5S"/>
                     <constraint firstItem="aBG-bK-jWx" firstAttribute="centerY" secondItem="IUA-3R-4VD" secondAttribute="centerY" id="QVO-Yx-Eae"/>
+                    <constraint firstItem="Xbr-1f-mgo" firstAttribute="centerY" secondItem="kH9-Fg-NV1" secondAttribute="centerY" id="Qk4-ba-qhh"/>
+                    <constraint firstItem="WC4-ia-QGv" firstAttribute="top" secondItem="Xbr-1f-mgo" secondAttribute="bottom" constant="14" id="RNf-au-ehS"/>
+                    <constraint firstItem="Xbr-1f-mgo" firstAttribute="leading" secondItem="kH9-Fg-NV1" secondAttribute="trailing" constant="10" id="dC7-cg-ZId"/>
                     <constraint firstItem="IUA-3R-4VD" firstAttribute="top" secondItem="xlr-6j-Rdn" secondAttribute="bottom" constant="10" id="gl9-LI-OB4"/>
                     <constraint firstItem="aBG-bK-jWx" firstAttribute="leading" secondItem="kH9-Fg-NV1" secondAttribute="trailing" constant="10" id="kbK-Md-vgc"/>
                     <constraint firstItem="xlr-6j-Rdn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ldZ-Gv-eX5"/>
@@ -73,6 +84,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="WC4-ia-QGv" id="Aps-oF-QuV"/>
+                <outlet property="commentButton" destination="Xbr-1f-mgo" id="kzC-NQ-yQN"/>
                 <outlet property="dateLabel" destination="aBG-bK-jWx" id="v4m-RX-rq3"/>
                 <outlet property="likeButton" destination="IUA-3R-4VD" id="70k-ae-jdd"/>
                 <outlet property="likeLabel" destination="kH9-Fg-NV1" id="IeK-VK-3CV"/>
