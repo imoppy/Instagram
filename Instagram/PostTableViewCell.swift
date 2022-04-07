@@ -36,7 +36,12 @@ class PostTableViewCell: UITableViewCell {
         postImageView.sd_setImage(with: imageRef)
 
         // キャプションの表示
-        self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        let comments = postData.comments.map({ (comment) -> String in
+            let name = comment["name"]
+            let caption = comment["caption"]
+            return "\n  \(name!) : \(caption!)"
+        }).joined()
+        self.captionLabel.text = "\(postData.name!) : \(postData.caption!)\(comments)"
 
         // 日時の表示
         self.dateLabel.text = ""

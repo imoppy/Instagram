@@ -36,7 +36,11 @@ class CommentViewController: UIViewController {
         SVProgressHUD.show()
 
         let postRef = Firestore.firestore().collection(Const.PostPath).document(postId)
-        postRef.updateData(["comments": FieldValue.arrayUnion([textView.text])])
+        let commentData = [
+            "name": Auth.auth().currentUser?.displayName ?? "noname",
+            "caption": textView.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        ]
+        postRef.updateData(["comments": FieldValue.arrayUnion([commentData])])
 
         SVProgressHUD.showSuccess(withStatus: "投稿しました")
         self.dismiss(animated: true, completion: nil)
