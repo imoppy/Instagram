@@ -16,7 +16,8 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
-    
+    @IBOutlet weak var commentLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -36,12 +37,15 @@ class PostTableViewCell: UITableViewCell {
         postImageView.sd_setImage(with: imageRef)
 
         // キャプションの表示
+        self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        
+        // コメントの表示
         let comments = postData.comments.map({ (comment) -> String in
             let name = comment["name"]
             let caption = comment["caption"]
-            return "\n  \(name!) : \(caption!)"
-        }).joined()
-        self.captionLabel.text = "\(postData.name!) : \(postData.caption!)\(comments)"
+            return "\(name!) : \(caption!)"
+        }).joined(separator: "\n")
+        self.commentLabel.text = comments
 
         // 日時の表示
         self.dateLabel.text = ""
